@@ -88,17 +88,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/projections\/admin_countries.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/projections\/admin_countries.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/projections\/admin_countries-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
-		},
 	"\/projections\/airy.html": {
 		"fileType": 8192,
 		"ignore": 0,
