@@ -3,7 +3,7 @@
 <style>
 
 body{
-  background: #ece7f2;
+  /*background: #ece7f2;*/
 }
 
 .graticule {
@@ -14,7 +14,8 @@ body{
 }
 
 .land {
-  fill: #a6bddb;
+  stroke: #a6bddb;
+  fill: none;
 }
 
 .visited {
@@ -23,41 +24,50 @@ body{
 
 .boundary {
   fill: none;
-  stroke: #0570b0;
-  stroke-width: .5px;
+/*  stroke: #0570b0;*/
+/*  stroke-width: .5px;*/
+  stroke: none;
 }
 
 </style>
 <body>
-<script src="//d3js.org/d3.v3.min.js"></script>
-<script src="//d3js.org/topojson.v1.min.js"></script>
+<script src="../js/d3.min.js"></script>
+<script src="../js/topojson.v1.min.js"></script>
 <script src="../js/d3.geo.projection.min.js"></script>
 <script>
 
 var width = 960,
-    height = 547;
+    height = 600;
 
 var projection = d3.geo.patterson()
     .scale(153)
+    .rotate([210, 0])
     .translate([width / 2, height / 2])
-    .precision(.1);
+    .precision(0.1);
 
 var path = d3.geo.path()
     .projection(projection);
+
+var graticule = d3.geo.graticule();
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
+svg.append("path")
+    .datum(graticule)
+    .attr("class", "graticule")
+    .attr("d", path);
+
 d3.json("world-50m.json", function(error, world) {
   if (error) throw error;
 
-  svg.insert("path", ".visited")
+  svg.insert("path", ".graticule")
       .datum(topojson.feature(world, world.objects.land))
       .attr("class", "land")
       .attr("d", path);
 
-  svg.insert("path", ".visited")
+  svg.insert("path", ".graticule")
       .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
       .attr("class", "boundary")
       .attr("d", path);
