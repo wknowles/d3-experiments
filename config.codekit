@@ -33,6 +33,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/data\/world-50m.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/data\/world-50m.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/data\/world-50m-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/data\/world.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -52,8 +63,8 @@
 		"outputAbbreviatedPath": "\/js\/min\/d3.geo.projection.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/js\/d3.js": {
 		"fileType": 64,
@@ -63,8 +74,8 @@
 		"outputAbbreviatedPath": "\/js\/min\/d3-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/js\/d3.min.js": {
 		"fileType": 64,
@@ -74,8 +85,8 @@
 		"outputAbbreviatedPath": "\/js\/min\/d3.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/js\/topojson.v1.min.js": {
 		"fileType": 64,
@@ -85,8 +96,8 @@
 		"outputAbbreviatedPath": "\/js\/min\/topojson.v1.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/projections\/airy.html": {
 		"fileType": 8192,
@@ -106,171 +117,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/projections\/icon\/apple-touch-icon-114x114.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 22392,
-		"inputAbbreviatedPath": "\/projections\/icon\/apple-touch-icon-114x114.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/apple-touch-icon-114x114.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/projections\/icon\/apple-touch-icon-120x120.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 23953,
-		"inputAbbreviatedPath": "\/projections\/icon\/apple-touch-icon-120x120.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/apple-touch-icon-120x120.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/projections\/icon\/apple-touch-icon-144x144.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 32461,
-		"inputAbbreviatedPath": "\/projections\/icon\/apple-touch-icon-144x144.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/apple-touch-icon-144x144.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/projections\/icon\/apple-touch-icon-60x60.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 7485,
-		"inputAbbreviatedPath": "\/projections\/icon\/apple-touch-icon-60x60.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/apple-touch-icon-60x60.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/projections\/icon\/apple-touch-icon-76x76.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11632,
-		"inputAbbreviatedPath": "\/projections\/icon\/apple-touch-icon-76x76.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/apple-touch-icon-76x76.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/projections\/icon\/apple-touch-icon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 35766,
-		"inputAbbreviatedPath": "\/projections\/icon\/apple-touch-icon.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/apple-touch-icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/projections\/icon\/favicon-144.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 37125,
-		"inputAbbreviatedPath": "\/projections\/icon\/favicon-144.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/favicon-144.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/projections\/icon\/favicon-196.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 63303,
-		"inputAbbreviatedPath": "\/projections\/icon\/favicon-196.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/favicon-196.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/projections\/icon\/favicon-32.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2528,
-		"inputAbbreviatedPath": "\/projections\/icon\/favicon-32.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/favicon-32.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/projections\/icon\/favicon-64.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 9107,
-		"inputAbbreviatedPath": "\/projections\/icon\/favicon-64.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/favicon-64.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/projections\/icon\/favicon-96.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19035,
-		"inputAbbreviatedPath": "\/projections\/icon\/favicon-96.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/favicon-96.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/projections\/icon\/favicon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 766,
-		"inputAbbreviatedPath": "\/projections\/icon\/favicon.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/favicon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/projections\/icon\/largetile.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 139613,
-		"inputAbbreviatedPath": "\/projections\/icon\/largetile.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/largetile.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/projections\/icon\/mediumtile.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 40440,
-		"inputAbbreviatedPath": "\/projections\/icon\/mediumtile.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/mediumtile.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/projections\/icon\/smalltile.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11066,
-		"inputAbbreviatedPath": "\/projections\/icon\/smalltile.png",
-		"outputAbbreviatedPath": "\/projections\/icon\/smalltile.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/projections\/lagrange.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -288,6 +134,57 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/projections\/natural-earth\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/projections\/natural-earth\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/projections\/natural-earth\/min\/script-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/projections\/natural-earth\/min\/script-min.js",
+		"outputAbbreviatedPath": "\/projections\/natural-earth\/min\/min\/script-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/projections\/natural-earth\/script.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/projections\/natural-earth\/script.js",
+		"outputAbbreviatedPath": "\/projections\/natural-earth\/min\/script-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/projections\/natural-earth\/style.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/projections\/natural-earth\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/projections\/natural-earth\/world-50m.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/projections\/natural-earth\/world-50m.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/projections\/natural-earth\/world-50m-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/projections\/patterson_cylindrical.html": {
 		"fileType": 8192,
@@ -325,13 +222,22 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/projections\/world-50m.json": {
+	"\/projections\/zoom-test\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/projections\/zoom-test\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/projections\/zoom-test\/world-50m.json": {
 		"fileType": 524288,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/projections\/world-50m.json",
+		"inputAbbreviatedPath": "\/projections\/zoom-test\/world-50m.json",
 		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/projections\/world-50m-min.json",
+		"outputAbbreviatedPath": "\/projections\/zoom-test\/world-50m-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -548,15 +454,15 @@
 	"jadeAutoOutputPathStyle": 0,
 	"jadeCompileDebug": 1,
 	"jadeOutputStyle": 0,
-	"javascriptAutoOutputPathEnabled": 1,
+	"javascriptAutoOutputPathEnabled": 0,
 	"javascriptAutoOutputPathFilenamePattern": "*-min.js",
 	"javascriptAutoOutputPathRelativePath": "\/min",
 	"javascriptAutoOutputPathReplace1": "",
 	"javascriptAutoOutputPathReplace2": "",
 	"javascriptAutoOutputPathStyle": 2,
 	"javascriptCreateSourceMap": 1,
-	"javascriptOutputStyle": 1,
-	"javascriptSyntaxCheckerStyle": 1,
+	"javascriptOutputStyle": 0,
+	"javascriptSyntaxCheckerStyle": 0,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
 		"asi": {
@@ -953,7 +859,7 @@
 	"markdownProcessHTML": 0,
 	"markdownRandomFootnoteNumbers": 0,
 	"markdownUseCompatibilityMode": 0,
-	"reloadFileURLs": 0,
+	"reloadFileURLs": 1,
 	"sassAutoOutputPathEnabled": 1,
 	"sassAutoOutputPathFilenamePattern": "*.css",
 	"sassAutoOutputPathRelativePath": "..\/css",

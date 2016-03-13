@@ -1,45 +1,3 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<style>
-
-body {
-  background: #fcfcfa;
-}
-
-.stroke {
-  fill: none;
-  stroke: #000;
-  stroke-width: 3px;
-}
-
-.fill {
-  fill: #fff;
-}
-
-.graticule {
-  fill: none;
-  stroke: #777;
-  stroke-width: .5px;
-  stroke-opacity: .5;
-}
-
-.land {
-  fill: #222;
-}
-
-.boundary {
-  fill: none;
-  stroke: #fff;
-  stroke-width: .5px;
-}
-
-</style>
-<body>
-<script src="//d3js.org/d3.v3.min.js"></script>
-<script src="//d3js.org/d3.geo.projection.v0.min.js"></script>
-<script src="//d3js.org/topojson.v1.min.js"></script>
-<script>
-
 var width = 960,
     height = 500;
 
@@ -51,7 +9,7 @@ var projection = d3.geo.naturalEarth()
 var path = d3.geo.path()
     .projection(projection);
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("body #map-wrapper").append("svg")
     .attr("width", width)
     .attr("height", height);
 
@@ -60,11 +18,9 @@ svg.append("defs").append("path")
     .attr("id", "sphere")
     .attr("d", path);
 
-
 svg.append("use")
     .attr("class", "fill")
     .attr("xlink:href", "#sphere");
-
 
 d3.json("world-50m.json", function(error, world) {
   if (error) throw error;
@@ -82,4 +38,4 @@ d3.json("world-50m.json", function(error, world) {
 
 d3.select(self.frameElement).style("height", height + "px");
 
-</script>
+
