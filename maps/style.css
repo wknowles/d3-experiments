@@ -4,7 +4,8 @@
 }
 
 body {
-  background: #fcfcfa;
+  /*background: #fcfcfa;*/
+  background: #2CD;
 }
 
 .stroke {
@@ -25,7 +26,17 @@ body {
 }
 
 .land {
-  fill: #1e7b1e;
+  fill: #131310;
+  opacity: 0.25;
+}
+
+.country {
+  fill: #131310;
+  opacity: 0.25;
+}
+
+.country:hover{
+  opacity: 0.375;
 }
 
 .boundary {

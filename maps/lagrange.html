@@ -1,13 +1,28 @@
-var width = 960,
-    height = 500;
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<div id="map-wrapper">
+</div>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="//d3js.org/d3.geo.projection.v0.min.js"></script>
+<script src="//d3js.org/topojson.v1.min.js"></script>
+<script>
 
-var projection = d3.geo.naturalEarth()
-    .scale(167)
+var width = 680,
+    height = 680;
+
+var projection = d3.geo.lagrange()
+    .scale(168)
     .translate([width / 2, height / 2])
     .precision(.1);
 
 var path = d3.geo.path()
     .projection(projection);
+
+var graticule = d3.geo.graticule();
 
 var svg = d3.select("body #map-wrapper").append("svg")
     .attr("width", width)
@@ -19,18 +34,27 @@ svg.append("defs").append("path")
     .attr("d", path);
 
 svg.append("use")
+    .attr("class", "stroke")
+    .attr("xlink:href", "#sphere");
+
+svg.append("use")
     .attr("class", "fill")
     .attr("xlink:href", "#sphere");
 
-d3.json("world-50m.json", function(error, world) {
+svg.append("path")
+    .datum(graticule)
+    .attr("class", "graticule")
+    .attr("d", path);
+
+d3.json("data/world-50m.json", function(error, world) {
   if (error) throw error;
 
-  svg.insert("path")
+  svg.insert("path", ".graticule")
       .datum(topojson.feature(world, world.objects.land))
       .attr("class", "land")
       .attr("d", path);
 
-  svg.insert("path")
+  svg.insert("path", ".graticule")
       .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
       .attr("class", "boundary")
       .attr("d", path);
@@ -38,4 +62,6 @@ d3.json("world-50m.json", function(error, world) {
 
 d3.select(self.frameElement).style("height", height + "px");
 
-
+</script>
+</body>
+</html>
