@@ -1,61 +1,30 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<style>
-
-body {
-  background: #fcfcfa;
-  display: flex;
-}
-
-
-.stroke {
-  fill: none;
-  stroke: #000;
-  stroke-width: 3px;
-}
-
-.fill {
-  fill: #fff;
-}
-
-.graticule {
-  fill: none;
-  stroke: #777;
-  stroke-width: .5px;
-  stroke-opacity: .5;
-}
-
-.land {
-  fill: #222;
-}
-
-.boundary {
-  fill: none;
-  stroke: #fff;
-  stroke-width: .5px;
-}
-
-</style>
-<body>
+<link rel="stylesheet" type="text/css" href="style.css">
+<div id="map-wrapper">
+</div>
 <script src="../js/d3.min.js"></script>
 <script src="../js/topojson.v1.min.js"></script>
 <script src="../js/d3.geo.projection.min.js"></script>
 <script>
 
 var width = 960,
-    height = 600;
+    height = 960;
 
-var projection = d3.geo.winkel3()
-    .scale(182)
+var projection = d3.geo.airy()
+    .rotate([110, -10])
+    .scale(340)
     .translate([width / 2, height / 2])
-    .precision(.1);
+    .precision(.1)
+    .clipAngle(90)
+    .radius(90);
 
 var path = d3.geo.path()
     .projection(projection);
 
 var graticule = d3.geo.graticule();
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("body #map-wrapper").append("svg")
     .attr("width", width)
     .attr("height", height);
 
@@ -77,7 +46,7 @@ svg.append("path")
     .attr("class", "graticule")
     .attr("d", path);
 
-d3.json("world-50m.json", function(error, world) {
+d3.json("data/world-50m.json", function(error, world) {
   if (error) throw error;
 
   svg.insert("path", ".graticule")
